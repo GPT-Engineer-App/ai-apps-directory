@@ -39,7 +39,7 @@ const App = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {apps.sort((a, b) => b.likes - a.likes).map(app => (
-            <div key={app.id} className="bg-black border-2 border-purple-500 rounded-2xl p-6 shadow-lg relative box-style">
+            <div key={app.id} className="bg-black border-2 border-purple-500 rounded-2xl p-6 shadow-lg relative box-style shadow-purple-500/50">
               <h2 className="text-xl font-bold mb-4">{app.name}</h2>
               <button 
                 className="absolute bottom-4 right-4 text-purple-500 hover:text-purple-300 transition-transform transform hover:scale-125"
